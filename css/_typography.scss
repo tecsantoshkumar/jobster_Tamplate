@@ -1,0 +1,560 @@
+/*****************************
+	Typography
+*****************************/
+body {
+	font-family: $font-base;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 14px;
+	color: $body-color;
+	overflow-x: hidden;
+}
+
+a {
+	outline: medium none !important;
+	color: $primary;
+	transition: all 0.3s ease-in-out;
+	text-decoration:none;
+
+	&:focus {
+		color: $gray-9;
+		text-decoration: none !important;
+	}
+
+	&:hover {
+		color: $gray-9;
+		text-decoration: none !important;
+	}
+
+}
+
+
+input {
+	outline: medium none !important;
+	color: $primary;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $font-heading;
+	font-weight: normal;
+	color: $gray-8;
+	margin-top: 0px;
+	font-weight: 600;
+
+	a {
+		color: inherit;
+	}
+
+}
+
+label {
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 42px;
+	font-style: normal;
+}
+
+h2 {
+	font-size: 28px;
+	line-height: 38px;
+}
+
+h3 {
+	font-size: 26px;
+}
+
+h4 {
+	font-size: 22px;
+}
+
+h5 {
+	font-size: 18px;
+}
+
+h6 {
+	font-size: 16px;
+}
+
+p {
+	font-weight: normal;
+	line-height: 1.7;
+}
+
+*::-moz-selection {
+	background: $primary;
+	color: $white;
+	text-shadow: none;
+}
+
+::-moz-selection {
+	background: $primary;
+	color: $white;
+	text-shadow: none;
+}
+
+::selection {
+	background: $primary;
+	color: $white;
+	text-shadow: none;
+}
+
+.container-fluid {
+	padding: 0 100px;
+}
+
+/* Loading */
+#pre-loader {
+	background-color: #ffffff;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	margin-top: 0px;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	overflow: hidden !important;
+	right: 0px;
+	z-index: 999999;
+}
+#pre-loader img {
+	text-align: center;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	z-index: 99;
+	margin: 0 auto;
+}
+
+/* divider */
+hr {
+	border-top-color: $border-color;
+	opacity: 0.10;
+ }
+
+/* form-control */
+.form-control {
+	border: 1px solid $border-color;
+	color: $gray-4;
+	border-radius: 0px;
+	height: 50px;
+	padding: 10px 20px;
+	box-shadow: none;
+	font-size: 14px;
+	font-weight: 600;
+	&:focus {
+		box-shadow: none;
+		border-color: $primary;
+	}
+}
+
+textarea.form-control{
+  height: auto;
+}
+
+/* custom-file */
+.custom-file {
+	.custom-file-label {
+		height: 50px;
+		font-size: 14px;
+		font-weight: 600;
+		color: $gray-8;
+		border-color: $border-color;
+		padding: 15px 90px 15px 20px;
+		border-radius: 0px;
+		&:after {
+			height: 48px;
+			padding: 14px 25px;
+			border-radius: 0px;
+		}
+	}
+	.custom-file-input {
+		height: 50px;
+		color: $gray-8;
+		border-radius: 3px;
+		border-color: $border-color;
+		&:focus~.custom-file-label {
+			border-color: $primary;
+			box-shadow: none;
+		}
+	}
+}
+
+
+/* input-group-prepend */
+.input-group-prepend,
+.input-group-append {
+	.input-group-text {
+		width: 50px;
+		background: transparent;
+		border-color: $border-color;
+		box-shadow: none;
+		justify-content: center;
+	}
+}
+
+.input-group-text {
+	border-radius: 0px;
+}
+
+/* checkbox */
+.custom-checkbox {
+	&:checked~.custom-control-label {
+		&:before {
+			background: $primary;
+			border-color: $primary;
+		}
+
+	}
+
+	&:not(:disabled) {
+		&:active~.custom-control-label {
+			&:before {
+				background: transparent;
+				border-color: transparent;
+			}
+
+		}
+
+	}
+
+	&:focus~.custom-control-label {
+		&:before {
+			box-shadow: none;
+		}
+
+	}
+
+	&:focus {
+		&:not(:checked)~.custom-control-label {
+			&:before {
+				border-color: $border-color;
+			}
+
+		}
+
+	}
+
+}
+.form-check-input[type=checkbox]{
+	border-radius: inherit;
+  margin-top: 2px;
+}
+.form-check-input{
+    border: 2px solid $gray-2;
+    width:15px;
+    height: 15px;
+    margin-top: 0;
+    flex: 0 0 15px;
+	&:checked{
+    background-color: $primary;
+    border-color: $primary;
+    border: 2px solid $primary;
+  }
+  &:focus{
+  	box-shadow: inherit;
+  	border-color: $primary;
+  }
+}
+
+.custom-control-label {
+	&:before {
+		top: 2px;
+	}
+
+	&:after {
+		top: 2px;
+	}
+
+}
+
+.custom-checkbox {
+	.custom-control-label {
+		&:before {
+			border-radius: 0px;
+			border: 2px solid $gray-2;
+		}
+
+	}
+
+}
+
+.form-check{
+ label{
+    padding-left: 5px;
+ }
+}
+.form-check.custom-radio {
+ .form-check-input{
+ 	 margin-top: 3px;
+ }
+}
+
+/* input-group */
+.choose-file.input-group .form-control {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 35px;
+    margin: 0;
+    opacity: 0;
+    color: #001935;
+    border-color: #eeeeee;
+}
+.choose-file .input-group-text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    line-height: 1.5;
+    background-color: $white;
+    border: 1px solid #ced4da;
+    height: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #001935;
+    border-color: $border-color;
+    padding: 15px 90px 15px 20px;
+}
+.choose-file .input-group-text::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    display: block;
+    line-height: 1.5;
+    color: #495057;
+    content: "Browse";
+    background-color: #e9ecef;
+    border-left: inherit;
+    border-radius: 0 .25rem .25rem 0;
+    height: 48px;
+    padding: 14px 25px;
+}
+
+/* border */
+.border {
+	border-color: $border-color !important;
+}
+
+.border-top {
+	border-top-color: $border-color !important;
+}
+
+.border-left {
+	border-left-color: $border-color !important;
+}
+
+.border-right {
+	border-right-color: $border-color !important;
+}
+
+.border-bottom {
+	border-bottom-color: $border-color !important;
+}
+
+
+/*Negative margin*/
+.mt-n3, .my-n3 {
+    margin-top: -1rem!important;
+}
+.mb-lg-n5, .my-lg-n5 {
+    margin-bottom: -3rem!important;
+}
+
+/* badge */
+.badge {
+	border-radius: $border-radius;
+
+	+ {
+		.badge {
+			margin-left: 6px;
+		}
+
+	}
+
+}
+
+.badge-md {
+	padding: 5px 8px;
+	font-size: 13px;
+	font-weight: normal;
+}
+
+.badge-primary {
+	background: $primary;
+}
+
+/* back to to */
+.back-to-top {
+	background: $primary;
+	color: $white;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 20px;
+	display: inline-block;
+	text-align: center;
+	position: fixed;
+	overflow: hidden;
+	cursor: pointer;
+	right: 30px;
+	bottom: 30px;
+	z-index: 9;
+	transition: all 0.3s ease-in-out;
+	&:hover {
+		background-color: $gray-9;
+		color: $white;
+	}
+	&:focus {
+		color: $white;
+	}
+
+}
+
+/* breadcrumb */
+.breadcrumb {
+	padding-left: 0;
+	background: transparent;
+	font-family: $font-heading;
+	font-weight: 500;
+	display: inline-flex;
+
+	.breadcrumb-item {
+		padding-right: 5px;
+
+		a {
+			color: $gray-3;
+
+			&:hover {
+				color: $primary;
+			}
+
+		}
+
+		i {
+			padding-right: 10px;
+			line-height: 20px;
+			font-size: 11px;
+		}
+
+		&:before {
+			display: none;
+		}
+
+	}
+
+	.active {
+		span {
+			color: $primary;
+		}
+
+	}
+
+}
+
+/* pagination */
+.pagination {
+	display: inline-flex;
+	border-radius: inherit;
+}
+
+.pagination .page-item {
+	margin: 0 6px;
+	display: inline-flex;
+}
+
+.pagination .page-item .page-link {
+	color: $gray-3;
+	padding: 12px 20px;
+	font-weight: 500;
+	border: 1px solid $border-color;
+	border-radius: 0px;
+}
+
+.page-item:last-child .page-link{
+	border-radius: inherit;
+}
+
+.page-item.active .page-link,
+.pagination .page-item .page-link:hover {
+	background: $primary;
+	border-color: $primary;
+	color: $white;
+}
+
+.pagination .page-item .page-link:focus {
+	background: $primary;
+	border-color: $primary;
+	color: $white;
+	box-shadow: none;
+}
+
+/* blockquote */
+.blockquote {
+	font-size: 16px;
+	border-left: 2px solid $border-color;
+	padding-left: 20px;
+	font-style: italic;
+	display: block;
+}
+
+/* table */
+.table-bordered {
+	td {
+		border-color: $border-color;
+	}
+
+	th {
+		border-color: $border-color;
+	}
+
+}
+
+.table {
+	thead {
+		th {
+			border-bottom-color: $border-color;
+		}
+
+	}
+
+}
+
+.table-striped {
+	tbody {
+		tr {
+			&:nth-of-type(odd) {
+				background: $gray-1;
+			}
+
+		}
+
+	}
+
+}
+
+.table {
+	td {
+		padding: 0.75rem;
+	}
+	th {
+		padding: 0.75rem;
+	}
+}
+

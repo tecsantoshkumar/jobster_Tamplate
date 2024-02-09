@@ -1,0 +1,23 @@
+/*****************************
+    List 
+*****************************/
+/* List Style 01 */
+.list-style-01 {
+    margin-bottom: 0;
+    li {
+        font-size: 15px;
+        margin: 5px 15px;
+        position: relative;
+        &:before {
+            content: "";
+            background: $primary;
+            height: 6px;
+            width: 6px;
+            display: inline-block;
+            position: absolute;
+            top: 7px;
+            left: -15px;
+        }
+    }
+}
+

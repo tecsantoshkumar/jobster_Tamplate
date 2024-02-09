@@ -1,0 +1,193 @@
+/*****************************
+	Footer
+*****************************/
+.footer {
+	padding-top: 90px;
+	color: $gray-4;
+	ul {
+		margin: 0;
+	}
+}
+
+.footer-shape {
+	position: absolute;
+	top: -100px;
+}
+
+.footer-top-logo img{
+	height: 34px;
+}
+
+.footer {
+	.footer-link {
+		ul {
+			li {
+				margin-bottom: 15px;
+				&:last-child {
+					margin-bottom: 0px;
+				}
+				a {
+					color: $gray-3;
+					&:hover {
+						color: $primary;
+					}
+				}
+			}
+		}
+	}
+}
+
+.footer {
+	.footer-contact-info {
+		ul {
+			li {
+				display: flex;
+				padding-bottom: 15px;
+				i {
+					line-height: 24px;
+				}
+				span {
+					padding-left: 15px;
+					align-self: top;
+				}
+			}
+		}
+	}
+	.footer-contact-info.bg-holder {
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		width: 100%;
+	}
+}
+
+.footer-bottom {
+	padding: 30px 0px;
+	color: $gray-3;
+	ul {
+		display: flex;
+		margin-bottom: 0;
+		li {
+			margin-right: 10px;
+			a {
+				color: $gray-3;
+				&:hover {
+					color: $primary;
+				}
+			}
+		}
+	}
+}
+
+.footer-bottom.bg-dark {
+	ul {
+		li {
+			a {
+				&:hover {
+					color: $primary;
+				}
+			}
+		}
+	}
+}
+
+.footer-bottom.bg-dark {
+	a {
+		&:hover {
+			color: $white;
+		}
+	}
+}
+
+.social {
+	ul {
+		li {
+			a {
+				font-weight: 600;
+			}
+		}
+		li.facebook {
+			a {
+				color: #094ecd;
+			}
+		}
+		li.twitter {
+			a {
+				color: #25d1e0;
+			}
+		}
+		li.linkedin {
+			a {
+				color: #0077b5;
+			}
+		}
+	}
+}
+
+.footer-bottom{
+   ul{
+  	 li{
+  	   a{
+         color: $white;
+  	   }
+  	 }
+   }
+}
+
+/* Dark BG */
+.bg-dark {
+	color: rgba($white , 0.5);
+}
+
+.footer.bg-dark {
+	color: $white;
+	h5 {
+		color: $white;
+	}
+	hr {
+		border-top-color: rgba($white , 0.1);
+		margin: 0;
+	}
+	.footer-bottom {
+		color: rgba($white , 0.5);
+		a {
+			&:hover {
+				color: $white;
+			}
+		}
+	}
+	.footer-link {
+		ul {
+			li {
+				a {
+					color: $white;
+					&:hover {
+						color: $primary
+					}
+				}
+			}
+		}
+	}
+
+	.counter{
+	 .counter-content{
+	 	 label{
+            color: $white;
+	 	 }
+	 }
+  }
+
+  .footer-bottom {
+	  ul {
+		  li {
+			  a {
+				  &:hover {
+					  color: $primary;
+				  }
+			  }
+		  }
+	  }
+  }
+
+}
+

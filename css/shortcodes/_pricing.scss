@@ -1,0 +1,192 @@
+/*****************************
+    Pricing 
+*****************************/
+/* Pricing plan 01 */
+.pricing-plan-01 {
+    border: 1px solid $gray-1;
+    position: relative;
+    margin: 20px 0;
+    padding: 15px 15px 35px;
+  .pricing-price {
+    border-bottom: 1px solid $gray-1;
+    padding: 20px 15px;
+   i {
+        line-height: 1;
+        margin-bottom: 15px;
+        color: $primary;
+        display: block;
+     }
+    .pricing-title{
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+    sup {
+        top: -20px;
+        font-size: 16px;
+        left: -5px;
+    }
+    strong {
+        color: $gray-9;
+        font-size: 36px;
+        transition: all 0.3s ease-in-out;
+        line-height: 46px;
+        font-weight: 500;
+    }
+  }
+  .pricing-list {
+    margin-bottom: 30px;
+    li {
+        border-bottom: 1px solid $gray-1;
+        padding: 15px 8px;
+        i{
+          color: $primary;
+          margin-right: 5px;
+        }
+     }
+   }
+
+     &:hover {
+      .btn {
+            background: $gray-9;
+            color: $white;
+            border-color: $gray-9;
+        }
+    }
+}
+
+.pricing-plan-01.active {
+    z-index: 2;
+    top: 0;
+    padding: 20px 15px 50px;
+    border-radius: $border-radius;
+    margin: 0 0px;
+    box-shadow: 0px 0px 34px 4px rgba($black, 0.06);
+    position: relative;
+
+    .pricing-price {
+      strong {
+        color: $primary;
+      }
+    }
+
+     .btn {
+        background: $primary;
+        color: $white;
+        border-color: $primary;
+    }
+
+     &:hover {
+        .pricing-price {
+            strong {
+                color: $primary;
+            }
+        }
+    }
+    &:before{
+        width: 100%;
+        height: 2px;
+        background-color: $primary;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        content: "";
+    }
+}
+
+
+
+/* Pricing Plan 02 */
+.pricing-plan-02 {
+    background-color: $gray-1;
+    margin-bottom: 30px;
+
+    .price-month {
+        .price {
+            font-size: 36px;
+            color: $gray-8;
+            line-height: 1;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+    }
+    .pricing-list {
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            padding: 0px;
+            flex-basis: 0;
+            flex-grow: 1;
+            flex: 0 0 45%;
+        }
+    }
+    .pricing-price {
+        padding: 20px 25px;
+    }
+}
+.pricing-plan-02.active {
+     position: relative;
+     &:before{
+        content: "";
+        border-bottom: 2px solid $primary;
+        display: inline-block;
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        bottom: -1px;
+      }
+    .price-month {
+        .price {
+            color: $primary;
+        }
+    }
+    .btn-outline {
+        border-color: $primary;
+        background-color: $primary;
+        color: $white;
+    }
+}
+
+
+/*****************************
+    Responsive
+*****************************/
+@media (max-width: 1199px) {
+  .pricing-plan-02 {
+    .pricing-list {
+      li {
+        flex: 0 0 42%;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .pricing-plan-02{
+    .pricing-price{
+     .btn {
+         padding: 12px 20px;
+      }
+    }
+    .pricing-list {
+      li {
+        flex: 0 0 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .pricing-plan-02{
+    .pricing-price{
+     li{
+        flex-basis:inherit;
+        flex-grow:inherit;
+        display: block;
+     }
+    }
+    .pricing-list {
+      display: block;
+    }
+  }
+}

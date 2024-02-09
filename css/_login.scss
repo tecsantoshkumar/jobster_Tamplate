@@ -1,0 +1,62 @@
+/*****************************
+	Login 
+*****************************/
+ 
+.login-register {
+	legend {
+		font-size: 13px;
+		font-weight: 500;
+		width: auto;
+		padding: 0;
+	}
+	.nav-tabs {
+		.tab-icon {
+			color: $black;
+		}
+		p {
+			color: $black;
+		}
+	}
+}
+
+
+/* Social Login */
+.social-login {
+	ul {
+		flex-wrap: wrap;
+		li {
+			flex: 2;
+			min-width: 49%;
+			margin-right: 2%;
+			margin-bottom: 2%;
+			a {
+				padding: 15px 20px;
+				display: block;
+				color: $white;
+			}
+		}
+		li.facebook {
+			a {
+				background: #466ca9;
+			}
+		}
+		li.twitter {
+			margin-right: 0;
+			a {
+				background: #20b5e6;
+			}
+		}
+		li.google {
+			a {
+				background: #d34836;
+			}
+		}
+		li.linkedin {
+			margin-right: 0;
+			a {
+				background: #13799f;
+			}
+		}
+	}
+}
+

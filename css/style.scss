@@ -1,0 +1,108 @@
+/*
+
+Template: Jobster - Job Board HTML5 Template
+Version: 2.0.0
+Author: potenzaglobalsolutions
+Design and Developed by: potenzaglobalsolutions.com
+
+NOTE: This is main stylesheet of template, This file contains the styling for the actual Template.
+
+*/
+
+/*================================================
+[  Table of contents  ]
+================================================
+
+ :: Typography
+ :: Helper Classes
+ :: Shortcodes
+  	- Accordion
+  	- Feature Box
+  	- Testimonial
+  	- Counter
+  	- Countdown
+  	- Nav Tab
+    - Owl carousel
+    - Pricing
+    - Button
+    - Progress Bar
+    - Select2
+    - Datetimepicker
+    - Portfolio
+ :: Header
+ :: Banner
+   - Banner Map
+   - Banner Slider
+   - Banner Bg Slider
+ :: Layout
+    - Section Title
+    - Category style
+ :: Listing
+   - Job list
+   - Job grid
+ :: Employer
+ 		- Employer List
+ 		- Employer Grid
+ :: Candidate
+ 		- Candidate List
+ 		- Candidate Grid
+ :: Jobster Candidate
+ :: Job Search Field
+ :: Job Filter
+ :: Sidebar
+   - Widget
+ :: Dashboard
+ :: Blog
+ :: Not found
+ :: Footer
+ :: Login
+ :: Responsive
+
+======================================
+[ End table content ]
+======================================*/
+
+// Core files
+@import "variables";
+@import "typography";
+@import "helpers";
+
+// User variables
+@import "user-variables";
+
+// Shortcodes
+@import "shortcodes/accordion";
+@import "shortcodes/feature-info";
+@import "shortcodes/testimonial";
+@import "shortcodes/counter";
+@import "shortcodes/countdown";
+@import "shortcodes/tabs";
+@import "shortcodes/owl-carousel";
+@import "shortcodes/pricing";
+@import "shortcodes/button";
+@import "shortcodes/progress-bar";
+@import "shortcodes/select";
+@import "shortcodes/datetimepicker";
+@import "shortcodes/category";
+@import "shortcodes/list";
+@import "shortcodes/portfolio";
+
+// Structure
+@import "header";
+@import "banner";
+@import "layout";
+@import "listing";
+@import "sidebar";
+@import "dashboard";
+@import "blog";
+@import "error";
+@import "footer";
+
+// Pages
+@import "login";
+
+// Responsive
+@import "responsive";
+
+// User CSS/SCSS
+@import "user";

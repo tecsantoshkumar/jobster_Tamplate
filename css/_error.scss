@@ -1,0 +1,19 @@
+
+/*****************************
+    Not found
+*****************************/
+.notfound-404 {
+    height: 230px;
+    position: relative;
+    z-index: -1;
+    h1 {
+        font-size: 160px;
+        margin: 0px;
+        font-weight: 700;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        background-size: cover;
+        background-position: center;
+    }
+}

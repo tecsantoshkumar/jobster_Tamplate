@@ -1,0 +1,116 @@
+/*****************************
+	Owl carousel 
+*****************************/
+.owl-nav-top-center {
+	.owl-nav {
+		.owl-next {
+			right: 40%;
+			font-size: 20px;
+			padding: 10px;
+			top: 25px;
+			transform: inherit;
+			position: absolute;
+			&:hover {
+				color: $primary;
+				transition: all 0.4s ease-in-out;
+			}
+		}
+	}
+}
+
+.owl-nav-top-center {
+	.owl-nav {
+		.owl-prev {
+			left: 40%;
+			font-size: 20px;
+			padding: 10px;
+			top: 25px;
+			transform: inherit;
+			position: absolute;
+			&:hover {
+				color: $primary;
+				transition: all 0.4s ease-in-out;
+			}
+		}
+	}
+}
+
+
+.owl-nav-bottom-center {
+	.owl-nav {
+		.owl-next {
+			left: 65%;
+			font-size: 32px;
+			bottom: 55px;
+			transform: inherit;
+			position: absolute;
+		}
+	}
+}
+
+.owl-nav-bottom-center {
+	.owl-nav {
+		.owl-prev {
+			right: 65%;
+			font-size: 32px;
+			bottom: 55px;
+			transform: inherit;
+			position: absolute;
+		}
+	}
+}
+
+.owl-nav-top-right {
+	.owl-nav {
+		.owl-next {
+			right: 0px;
+			top: -43px;
+			transform: inherit;
+			position: absolute;
+			padding: 15px;
+			&:hover {
+				color: $primary;
+				transition: all 0.4s ease-in-out;
+			}
+		}
+	}
+}
+
+
+.owl-nav-top-right {
+	.owl-nav {
+		.owl-prev {
+			right: 40px;
+			top: -43px;
+			transform: inherit;
+			position: absolute;
+			padding: 15px;
+			&:hover {
+				color: $primary;
+				transition: all 0.4s ease-in-out;
+			}
+		}
+	}
+}
+
+.owl-carousel {
+	.owl-dots {
+		display: flex;
+		justify-content: center;
+		margin-top: 30px;
+	}
+}
+.owl-carousel {
+	.owl-dot {
+		height: 15px;
+		width: 15px;
+		background: $gray-2;
+		margin: 0 8px;
+		&:hover {
+			background: $primary;
+		}
+	}
+	.owl-dot.active {
+		background: $primary;
+	}
+}

@@ -1,0 +1,486 @@
+/*****************************
+  Dashboard
+*****************************/
+.user-dashboard-sidebar {
+  .jobster-user-info {
+    border: 2px solid $border-color;
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+.jobster-user-info {
+  .profile-avatar {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 20px;
+     img {
+      height: 115px;
+      width: 115px;
+      border-radius: 100%;
+      object-fit: cover;
+     }
+    img {
+      border-radius: 100%;
+    }
+    i {
+      font-size: 16px;
+      color: $primary;
+      position: absolute;
+      background: $white;
+      border-radius: 100%;
+      cursor: pointer;
+      height: 30px;
+      width: 30px;
+      line-height: 30px;
+      text-align: center;
+      bottom: 20px;
+      right: -5px;
+    }
+  }
+}
+
+.upload-file {
+  .custom-file {
+    width: 160px;
+    height: 50px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    position: relative;
+    display: inline-block;
+    .custom-file-label {
+      background: $primary;
+      padding: 0;
+      color: $white;
+      height: 50px;
+      font-weight: 400;
+      line-height: 50px;
+      text-align: center;
+      border: none;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      &:after {
+        display: none;
+      }
+    }
+   .custom-file-input {
+    height: 50px;
+    width: 100%;
+    position: relative;
+    z-index: 99;
+    opacity: 0;
+   }
+  }
+}
+
+.custom-file {
+  .custom-file-input {
+    height: 50px;
+  }
+ }
+
+/* user dashboard nav */
+.user-dashboard-nav {
+  border: 2px solid $border-color;
+  padding: 2px;
+  margin-top: 30px;
+  ul {
+    li {
+      margin-bottom: 2px;
+      background: $primary;
+      &:last-child {
+        margin-bottom: 0px;
+      }
+      a {
+        color: $gray-8;
+        padding: 15px 20px;
+        background: $gray-1;
+        display: block;
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+    li.active {
+      a {
+        color: $primary;
+      }
+    }
+  }
+}
+
+/* user dashboard info box */
+
+.user-dashboard-info-box{
+  margin-bottom:30px;
+  .bg-light {
+    .input-group-append {
+      .input-group-text {
+        background-color: #ffffff;
+      }
+    }
+  }
+}
+
+.cover-photo-contact {
+  .cover-photo {
+    position: relative;
+    i {
+      top: -10px;
+      right: -10px;
+      font-size: 24px;
+      color: $primary;
+      position: absolute;
+      background: $white;
+      border-radius: 100%;
+      cursor: pointer;
+    }
+  }
+}
+
+.user-dashboard-info-box {
+  .search {
+    position: relative;
+    i {
+      position: absolute;
+      right: 0;
+      top: 0;
+      background: $primary;
+      color: $white;
+      padding: 18px 20px;
+      cursor: pointer;
+    }
+    input {
+      padding-right: 65px;
+      border-radius: 0px;
+      height: 50px;
+    }
+  }
+}
+
+.user-dashboard-table {
+  th {
+    p {
+      color: $body-color;
+    }
+  }
+  tr {
+    td {
+      color: $body-color;
+      vertical-align: middle;
+    }
+  }
+  td {
+    li {
+      margin: 0 4px;
+      a.text-info {
+        color: $blue;
+      }
+      a {
+        &:hover {
+          color: $primary;
+        }
+      }
+      a.text-primary {
+        &:hover {
+          color: $gray-9 !important;
+        }
+      }
+    }
+  }
+}
+
+.user-dashboard-info-box {
+  .pricing-plan.active {
+    box-shadow: none !important;
+  }
+}
+
+
+
+/* secondary menu */
+.secondary-menu {
+  padding-bottom: 0px;
+  margin-top: 30px;
+}
+
+.secondary-menu {
+  ul {
+    padding: 0px;
+    margin: 0;
+    li {
+      list-style: none;
+      padding-right: 9px;
+      padding-bottom: 10px;
+      a {
+        display: block;
+        color: $body-color;
+        font-weight: 600;
+        text-transform: capitalize;
+        padding: 10px 16px;
+        &:hover {
+          color: $white;
+          background: $primary;
+        }
+      }
+      a.active {
+        color: $white;
+        background: $primary;
+      }
+    }
+  }
+}
+
+
+/* dashboard */
+.user-dashboard-info-box {
+  .feature-info.bg-primary {
+    .feature-info-icon {
+      border: none;
+      background: lighten($primary, 10%);
+      color: #ffffff;
+    }
+  }
+  .feature-info.bg-dark {
+    .feature-info-icon {
+      background: lighten($gray-9, 04%);
+      border: none;
+    }
+  }
+  .feature-info.bg-light {
+    .feature-info-icon {
+      background: $white;
+      border: none;
+    }
+  }
+}
+
+
+/* candidates-user */
+.candidates-user-info {
+  .candidates-skills {
+    padding: 15px;
+    .btn {
+      padding: 12px 20px;
+    }
+  }
+}
+.candidates-profile-info {
+  .progress {
+    height: 2px;
+    bottom: 15px;
+    margin: 0px;
+    .progress-bar {
+      height: 2px;
+    }
+  }
+  .progress~.profile-avatar {
+    margin-top: 15px;
+  }
+}
+
+.user-dashboard-sidebar {
+  .progress {
+    .progress-bar-number {
+      position: absolute;
+      right: 10%;
+      color: #969696;
+      top: 10px;
+    }
+  }
+}
+
+/* candidates-feature-info */
+.candidates-feature-info {
+  transition: all 0.3s ease-in-out;
+  padding: 20px;
+  background: $white;
+  border: 1px solid $border-color;
+
+
+  .candidates-info-icon {
+    width: 70px;
+    height: 70px;
+    line-height: 78px;
+    text-align: center;
+    display: block;
+    background: rgba($primary, 0.1);
+    border-radius: 50%;
+    i {
+      font-size: 24px;
+    }
+
+  }
+
+  .candidates-info-content {
+    margin: 10px 0;
+    .candidates-info-title {
+      margin-bottom: 0;
+    }
+
+  }
+
+  .candidates-info-count {
+    font-size: 24px;
+  }
+
+}
+
+
+/* dashboard my resume */
+.user-dashboard-info-circle {
+  border: 2px solid $border-color;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  margin-top: 10px;
+  i {
+    color: $gray-9;
+  }
+}
+
+.user-dashboard-info-box {
+  .user-dashboard-minus {
+    i {
+      background: $gray-9;
+      padding: 4px 8px;
+      border-radius: $border-radius;
+      color: $white;
+    }
+  }
+}
+.user-dashboard-info-box {
+  .dashboard-timeline-info {
+    position: relative;
+  }
+}
+.user-dashboard-info-box {
+  .dashboard-timeline-edit {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+
+/* My Resume */
+.profile{
+  margin-bottom: 25px;
+  .jobster-user-info {
+    display: inline-block;
+    width: 100%;
+    .profile-avatar {
+      position: relative;
+      height: 115px;
+      width: 115px;
+      border-radius: 100%;
+      display: inline-block;
+      img {
+        border-radius: 100%;
+      }
+      i {
+        font-size: 16px;
+        color: $primary;
+        position: absolute;
+        background: $white;
+        border-radius: 100%;
+        cursor: pointer;
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+        text-align: center;
+        bottom: 20px;
+        right: -5px;
+      }
+    }
+  }
+}
+
+.about-candidate {
+  padding: 25px 0px;
+  .candidate-info {
+    margin-bottom: 20px;
+  }
+}
+
+.resume-experience{
+  padding-left: 10px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  position: relative;
+  padding-right: 50px;
+  background: $gray-1;
+  &:before {
+      position: absolute;
+      left: -40%;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background: $gray-1;
+      content: "";
+      z-index: -1;
+      top: 0;
+  }
+  .jobster-candidate-timeline {
+    .jobster-timeline-item {
+      .jobster-timeline-cricle {
+        border-color: $gray-1;
+      }
+    }
+  }
+}
+
+.user-dashboard-info-box {
+  .select2-container--default {
+    .select2-selection--single {
+      .select2-selection__rendered {
+        font-weight: bold;
+        color: #626262;
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .secondary-menu {
+    ul {
+      li {
+        a {
+          padding: 10px 15px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .resume-experience {
+    padding-left: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 15px;
+    &:before {
+      content: none;
+    }
+  }
+
+  .secondary-menu {
+    ul {
+      li {
+        display: inline-block;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 575px) {
+  .secondary-menu ul li a {
+    padding: 4px 8px;
+  }
+
+}

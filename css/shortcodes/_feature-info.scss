@@ -1,0 +1,146 @@
+/*****************************
+    Feature Box
+*****************************/
+
+.feature-info {
+    padding: 25px;
+    border: 1px solid $border-color;
+    .feature-info-icon {
+        font-size: 56px;
+        line-height: 56px;
+        display: inline-block;
+        color: $primary;
+        h5{
+         word-break: break-word;
+        }
+    }
+    .feature-info-content {
+        p {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+
+/* Feature Style 01 */
+.feature-info-01 {
+    display: flex;
+    border: 1px solid $border-color;
+    position: relative;
+    .feature-info-icon {
+        font-size: 76px;
+        line-height: 76px;
+    }
+    &:before {
+        content: "";
+        border-bottom: 2px solid;
+        display: inline-block;
+        position: absolute;
+        left: -1px;
+        right: -1px;
+        bottom: -1px;
+    }
+    .feature-info-content {
+        a {
+            font-weight: 600;
+        }
+    }
+}
+
+.feature-info-01.primary-box {
+    &:before {
+        border-bottom-color: $primary;
+    }
+}
+
+.feature-info-01.dark-box {
+    &:before {
+        border-bottom-color: $gray-9;
+    }
+}
+
+/* Feature Style 02 */
+.feature-info-02 {
+    padding: 0;
+    .feature-info-icon {
+        border: none;
+        border-radius: 100%;
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        background: lighten( $primary, 10% );
+        color: $white;
+        text-align: center;
+        display: inline-block;
+        margin-bottom: 20px;
+        i {
+            font-size: 36px;
+            line-height: inherit;
+        }
+    }
+    .feature-info-content {
+        .title {
+            color: lighten( $primary, 10% );
+        }
+    }
+    &:hover {
+        background: inherit;
+    }
+}
+
+.feature-info-02.text-start {
+    display: flex;
+    .feature-info-icon {
+        flex: 0 0 80px;
+        margin-bottom: 0;
+    }
+}
+
+
+
+/* Feature Step */
+.feature-step {
+    padding: 0;
+    .feature-info-img {
+         position: relative;
+        img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+          }
+
+        .feature-info-icon {
+            width: 90px;
+            height: 90px;
+            line-height: 90px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-bottom: 15px;
+            background: $gray-1;
+            transition: all 0.3s ease-in-out;
+            color: $primary;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: $white;
+            font-size: 40px;
+         }
+      }
+      &:hover {
+        .feature-info-img {
+         .feature-info-icon {
+         color: $white;
+         background-color: $primary;
+        }
+      }
+    }
+}
+
+
+.feature-info-content {
+    label {
+        font-size: 13px;
+    }
+}
+
